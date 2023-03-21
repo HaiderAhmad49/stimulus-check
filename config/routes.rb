@@ -1,12 +1,22 @@
 Rails.application.routes.draw do
 
+
+
+
  
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
-  root "slideshow#index"
+  root "enabledisable#index"
 
   get "public", to: "public#index"
+
+  get "form", to: "form#index"
+
+  get "enabledisable", to: "enabledisable#index"
+
+
+  get "table", to: "table#index"
 
   get "slideshow", to: "slideshow#index"
 
